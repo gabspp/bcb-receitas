@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Receitas de Chocolate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora de Receitas de Chocolate</h1>
+            <p>Calcule as proporções exatas para sua receita de chocolate</p>
+        </header>
+
+        <main>
+            <div class="calculator">
+                <div class="input-group">
+                    <label for="chocolate-type">Tipo de Chocolate:</label>
+                    <select id="chocolate-type">
+                        <option value="70">Chocolate 70%</option>
+                        <option value="40">Chocolate 40%</option>
+                        <option value="meio-leite">Meio ao Leite</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="reference-type">Referência para Cálculo:</label>
+                    <select id="reference-type">
+                        <option value="total">Peso Total Final</option>
+                        <option value="liquor">Peso de Liquor</option>
+                        <option value="sugar">Peso de Açúcar</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="reference-value">Valor de Referência (g):</label>
+                    <input type="number" id="reference-value" min="1" value="1000">
+                </div>
+
+                <button id="calculate-btn">Calcular Receita</button>
+            </div>
+
+            <div class="results" id="results">
+                <h2>Resultado</h2>
+                <div class="ingredients">
+                    <div class="ingredient">
+                        <span class="ingredient-name">Liquor de Cacau:</span>
+                        <span class="ingredient-value" id="liquor-value">0g</span>
+                    </div>
+                    <div class="ingredient">
+                        <span class="ingredient-name">Açúcar:</span>
+                        <span class="ingredient-value" id="sugar-value">0g</span>
+                    </div>
+                    <div class="ingredient">
+                        <span class="ingredient-name">Manteiga de Cacau:</span>
+                        <span class="ingredient-value" id="butter-value">0g</span>
+                    </div>
+                    <div class="ingredient">
+                        <span class="ingredient-name">Leite em Pó:</span>
+                        <span class="ingredient-value" id="milk-value">0g</span>
+                    </div>
+                    <div class="ingredient">
+                        <span class="ingredient-name">Lecitina de Soja:</span>
+                        <span class="ingredient-value" id="lecithin-value">0g</span>
+                    </div>
+                    <div class="ingredient total">
+                        <span class="ingredient-name">Peso Total:</span>
+                        <span class="ingredient-value" id="total-value">0g</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Calculadora de Receitas de Chocolate &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
