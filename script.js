@@ -17,16 +17,14 @@ const chocolateRecipes = {
         lecithin: 0.01 // 1% de lecitina de soja
     },
     // Chocolate Meio ao Leite
-    {
     "meio-leite": {
         liquor: 0.30, // 30% de liquor
         sugar: 0.35,  // 35% de açúcar
         butter: 0.13, // 13% de manteiga de cacau
         milk: 0.14,   // 14% de leite em pó
         lecithin: 0.004 // 0.4% de lecitina de soja
-    }
+    },
 }
-};
 
 // Elementos do DOM
 const chocolateTypeSelect = document.getElementById('chocolate-type');
